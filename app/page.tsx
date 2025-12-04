@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import TestimonialSection from "./components/Testimonials";
+import CalltoAction from "./components/CalltoAction";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <Services />
       <TestimonialSection />
+      <CalltoAction />
     </>
   );
 }
