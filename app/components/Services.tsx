@@ -4,7 +4,7 @@ export default function Services() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-[#222222] text-gray-100 text-sm font-medium mb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -21,7 +21,7 @@ export default function Services() {
             Our Services
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-linear-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-50">
             Everything You Need to Succeed Online
           </h2>
 
@@ -225,7 +225,7 @@ function ServiceCard({ title, desc, icon, gradient, delay, tags }: any) {
           {tags.map((tag: string, i: number) => (
             <span
               key={i}
-              className="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold border-transparent bg-secondary text-secondary-foreground text-xs hover:bg-primary/10 transition-colors"
+              className="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold border-transparent bg-[#262626] text-gray-100 text-xs transition-colors"
             >
               {tag}
             </span>
