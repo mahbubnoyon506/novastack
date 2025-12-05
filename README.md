@@ -1,8 +1,14 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This app is about [NovaStack](https://novastack-psi.vercel.app/) a digital solution provider.
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository and install all required packages
+
+```bash
+npm install
+```
+
+Now, run the development server:
 
 ```bash
 npm run dev

@@ -41,7 +41,7 @@ export default function Navbar() {
 
             {/* Mobile Menu Toggle */}
             <button
-              className="icon-btn md:hidden"
+              className="icon-btn md:hidden cursor-pointer"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               <MdOutlineMenu color="white" size={32} />

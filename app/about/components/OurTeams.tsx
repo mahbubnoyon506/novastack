@@ -4,20 +4,20 @@ import Image from "next/image";
 
 const teams = [
   {
-    avatar: "https://i.pravatar.cc/200?img=12",
+    avatar: "/assets/images/john.jpg",
     name: "John Doe",
     designation: "Frontend Developer",
     expertise:
       "Expert in React, Tailwind, and building immersive UI experiences.",
   },
   {
-    avatar: "https://i.pravatar.cc/200?img=32",
+    avatar: "/assets/images/sarah2.jpg",
     name: "Sarah Lee",
     designation: "Backend Engineer",
     expertise: "Specialized in Node.js, databases, and scalable architecture.",
   },
   {
-    avatar: "https://i.pravatar.cc/200?img=48",
+    avatar: "/assets/images/michael.jpg",
     name: "Michael Smith",
     designation: "UI/UX Designer",
     expertise:

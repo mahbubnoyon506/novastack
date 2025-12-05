@@ -13,21 +13,21 @@ const testimonials = [
     role: "Founder, CraftWave",
     feedback:
       "Absolutely outstanding service! The team delivered a stunning website that boosted our conversions within weeks.",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    avatar: "/assets/images/sarah.jpg",
   },
   {
     name: "David Carter",
     role: "CEO, FinEdge",
     feedback:
       "Professional, fast, and highly skilled. Our mobile app is now smoother and more user-friendly than ever.",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    avatar: "/assets/images/david.jpg",
   },
   {
     name: "Emily Parker",
     role: "Marketing Director, Brandsly",
     feedback:
       "Their marketing and analytics strategy helped us scale our online presence significantly. Highly recommended!",
-    avatar: "https://randomuser.me/api/portraits/women/68.jpg",
+    avatar: "/assets/images/emily.jpg",
   },
 ];
 
