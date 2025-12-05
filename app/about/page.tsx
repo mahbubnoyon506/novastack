@@ -1,11 +1,11 @@
 import React from "react";
-import AboutAndMissionVision from "./components/AboutAndMissionVision";
 import OurTeams from "./components/OurTeams";
+import AboutMissionVision from "./components/AboutMissionVision";
 
 export default function AboutRs() {
   return (
     <>
-      <AboutAndMissionVision />
+      <AboutMissionVision />
       <OurTeams />
     </>
   );

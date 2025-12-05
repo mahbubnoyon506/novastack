@@ -1,53 +1,55 @@
+import SectionHeader from "@/components/SectionHeader";
+import SectionWrapper from "@/components/SectionWrapper";
+import Image from "next/image";
+
+const teams = [
+  {
+    avatar: "https://i.pravatar.cc/200?img=12",
+    name: "John Doe",
+    designation: "Frontend Developer",
+    expertise:
+      "Expert in React, Tailwind, and building immersive UI experiences.",
+  },
+  {
+    avatar: "https://i.pravatar.cc/200?img=32",
+    name: "Sarah Lee",
+    designation: "Backend Engineer",
+    expertise: "Specialized in Node.js, databases, and scalable architecture.",
+  },
+  {
+    avatar: "https://i.pravatar.cc/200?img=48",
+    name: "Michael Smith",
+    designation: "UI/UX Designer",
+    expertise:
+      "Creates beautiful, intuitive designs with a user‑first mindset.",
+  },
+];
+
 export default function OurTeams() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Card 1 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center">
-            <img
-              src="https://i.pravatar.cc/200?img=12"
-              alt="Team Member"
+    <SectionWrapper className="bg-neutral-950">
+      <SectionHeader title="Meet Our Team" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {teams.map((team, idx) => (
+          <div
+            key={idx}
+            className="bg-transparent shadow-lg border border-[#191919] rounded-2xl p-6 flex flex-col items-center text-center"
+          >
+            <Image
               className="w-32 h-32 rounded-full object-cover mb-4"
-            />
-            <h3 className="text-xl font-semibold">John Doe</h3>
-            <p className="text-sm text-gray-500 mb-3">Frontend Developer</p>
-            <p className="text-gray-600 text-sm">
-              Expert in React, Tailwind, and building immersive UI experiences.
-            </p>
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center">
-            <img
-              src="https://i.pravatar.cc/200?img=32"
+              width={125}
+              height={125}
+              src={team.avatar}
               alt="Team Member"
-              className="w-32 h-32 rounded-full object-cover mb-4"
             />
-            <h3 className="text-xl font-semibold">Sarah Lee</h3>
-            <p className="text-sm text-gray-500 mb-3">Backend Engineer</p>
-            <p className="text-gray-600 text-sm">
-              Specialized in Node.js, databases, and scalable architecture.
+            <h3 className="text-xl text-gray-100 font-semibold">{team.name}</h3>
+            <p className="text-sm text-muted-foreground mb-3">
+              {team.designation}
             </p>
+            <p className="text-muted-foreground text-sm">{team.expertise}</p>
           </div>
-
-          {/* Card 3 */}
-          <div className="bg-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center">
-            <img
-              src="https://i.pravatar.cc/200?img=48"
-              alt="Team Member"
-              className="w-32 h-32 rounded-full object-cover mb-4"
-            />
-            <h3 className="text-xl font-semibold">Michael Smith</h3>
-            <p className="text-sm text-gray-500 mb-3">UI/UX Designer</p>
-            <p className="text-gray-600 text-sm">
-              Creates beautiful, intuitive designs with a user‑first mindset.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
-    </section>
+    </SectionWrapper>
   );
 }

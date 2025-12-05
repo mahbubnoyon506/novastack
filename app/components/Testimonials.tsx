@@ -1,5 +1,12 @@
 "use client";
 
+import PillBadge from "@/components/PillBadge";
+import SectionHeader from "@/components/SectionHeader";
+import SectionWrapper from "@/components/SectionWrapper";
+import Image from "next/image";
+import { FaRegStar } from "react-icons/fa";
+import { FaRegMessage } from "react-icons/fa6";
+
 const testimonials = [
   {
     name: "Sarah Johnson",
@@ -26,78 +33,53 @@ const testimonials = [
 
 export default function TestimonialSection() {
   return (
-    <section className="py-24 bg-linear-to-b from-background to-muted/20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="lucide lucide-message-square w-4 h-4 mr-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-            </svg>
-            Testimonials
-          </div>
+    <SectionWrapper className="bg-neutral-900">
+      <div className="flex justify-center">
+        <PillBadge
+          title="Testimonials"
+          icon={<FaRegMessage className="mr-1" color="white" />}
+        />
+      </div>
+      <SectionHeader
+        title="What Our Clients Say"
+        subtitle="Hear experiences from clients who trusted our digital expertise"
+      />
 
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-linear-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
-            What Our Clients Say
-          </h2>
-
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Hear experiences from clients who trusted our digital expertise
-          </p>
-        </div>
-
-        {/* Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((t, i) => (
-            <div
-              key={i}
-              className="rounded-lg border shadow-sm group hover:shadow-xl transition-all duration-500 border-border/50 hover:border-primary/20 bg-card/50 backdrop-blur-sm p-8 animate-fade-in-up"
-              style={{ animationDelay: `${i * 150}ms` }}
-            >
-              <div className="flex items-center mb-6">
-                <img
-                  src={t.avatar}
-                  alt={t.name}
-                  className="w-14 h-14 rounded-full shadow-md border"
-                />
-                <div className="ml-4">
-                  <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
-                    {t.name}
-                  </h3>
-                  <p className="text-muted-foreground text-sm">{t.role}</p>
-                </div>
-              </div>
-
-              <p className="text-muted-foreground text-base leading-relaxed">
-                “{t.feedback}”
-              </p>
-
-              <div className="flex items-center mt-4 text-primary">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="lucide lucide-stars h-5 w-5 mr-1"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path d="m12 3 2.4 4.9L20 9l-4 4 .9 5-4.9-2.6L7 18l1-5-4-4 5-.1z" />
-                </svg>
-                <span className="text-sm font-medium">5.0 Rating</span>
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+        {testimonials.map((item, i) => (
+          <div
+            key={i}
+            className="rounded-lg border shadow-sm group hover:shadow-xl transition-all duration-500 border-[#7E7E7E] bg-transparent backdrop-blur-sm p-8 animate-fade-in-up"
+          >
+            <div className="flex items-center mb-6">
+              <Image
+                width={100}
+                height={100}
+                src={item.avatar}
+                alt={item.name}
+                className="w-14 h-14 rounded-full shadow-md border"
+              />
+              <div className="ml-4">
+                <h3 className="font-semibold text-lg group text-gray-100 transition-colors">
+                  {item.name}
+                </h3>
+                <p className="text-muted-foreground text-sm">{item.role}</p>
               </div>
             </div>
-          ))}
-        </div>
+
+            <p className="text-muted-foreground text-base leading-relaxed">
+              “{item.feedback}”
+            </p>
+
+            <div className="flex items-center mt-4 text-primary">
+              <FaRegStar color="white" />
+              <span className="text-sm font-medium text-gray-100 ml-1">
+                5.0 Rating
+              </span>
+            </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </SectionWrapper>
   );
 }

@@ -13,6 +13,7 @@ const config = {
     extend: {
       colors: {
         primary: "#0A0A0A",
+        secondary: "#0F0F0F",
         neutral: "#000000",
         tertiary: "#0C0C0C",
         offwhite: "#FAFAFA",

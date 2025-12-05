@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { MdOutlineLocalPhone, MdOutlineMenu } from "react-icons/md";
 const menuItems = [
   { name: "Home", url: "/" },
   { name: "About", url: "/about" },
@@ -33,16 +34,8 @@ export default function Navbar() {
 
           {/* Right Side Buttons */}
           <div className="flex items-center space-x-4">
-            <Link href="/contact" className="cta-btn hidden sm:flex">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="lucide lucide-phone h-4 w-4 mr-2"
-                fill="none"
-                stroke="#fff"
-                strokeWidth="2"
-              >
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
+            <Link href="/contact" className="hidden sm:flex items-center">
+              <MdOutlineLocalPhone className="mr-1" color="white" size={20} />
               <p className="text-gray-50">Get Quote</p>
             </Link>
 
@@ -51,17 +44,7 @@ export default function Navbar() {
               className="icon-btn md:hidden"
               onClick={() => setMenuOpen(!menuOpen)}
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="lucide lucide-menu h-5 w-5"
-                fill="none"
-                stroke="#fff"
-                strokeWidth="2"
-              >
-                <line x1="4" x2="20" y1="12" y2="12"></line>
-                <line x1="4" x2="20" y1="6" y2="6"></line>
-                <line x1="4" x2="20" y1="18" y2="18"></line>
-              </svg>
+              <MdOutlineMenu color="white" size={32} />
             </button>
           </div>
         </div>
