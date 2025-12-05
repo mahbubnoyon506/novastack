@@ -37,8 +37,8 @@ export default function AboutMissionVision() {
           {/* Features */}
           <div className="space-y-6 mb-10">
             {/* Feature 1 */}
-            <div className="flex items-center gap-4">
-              <RiGroupLine color="white" />
+            <div className="flex items-start gap-2">
+              <RiGroupLine color="white" size={30} />
               <div>
                 <h3 className="text-gray-100 font-semibold text-lg mb-2">
                   Expert Team
@@ -51,8 +51,8 @@ export default function AboutMissionVision() {
             </div>
 
             {/* Feature 2 */}
-            <div className="flex items-center gap-4">
-              <GoLightBulb color="white" />
+            <div className="flex items-start gap-2">
+              <GoLightBulb color="white" size={30} />
               <div>
                 <h3 className="text-gray-100 font-semibold text-lg mb-2">
                   Future-Focused

@@ -53,7 +53,12 @@ export default function Navbar() {
         {menuOpen && (
           <nav className="md:hidden  flex flex-col space-y-4 mt-4 pb-8 text-gray-200">
             {menuItems.map((menu, idx) => (
-              <Link key={idx} href={menu.url} className="nav-link">
+              <Link
+                key={idx}
+                href={menu.url}
+                className="nav-link"
+                onClick={() => setMenuOpen(false)}
+              >
                 {menu.name}
               </Link>
             ))}
