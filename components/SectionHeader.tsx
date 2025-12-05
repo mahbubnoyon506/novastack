@@ -10,7 +10,7 @@ export default function SectionHeader({
   return (
     <div className={clsx("mb-16 text-center", className)} {...props}>
       {title && (
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-50">
+        <h2 className="text-3xl md:text-5xl font-bold mb-6 text-gray-50">
           {title}
         </h2>
       )}

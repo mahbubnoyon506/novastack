@@ -37,10 +37,8 @@ export default function AboutMissionVision() {
           {/* Features */}
           <div className="space-y-6 mb-10">
             {/* Feature 1 */}
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-nova-purple/10 flex items-center justify-center">
-                <RiGroupLine color="white" />
-              </div>
+            <div className="flex items-center gap-4">
+              <RiGroupLine color="white" />
               <div>
                 <h3 className="text-gray-100 font-semibold text-lg mb-2">
                   Expert Team
@@ -53,10 +51,8 @@ export default function AboutMissionVision() {
             </div>
 
             {/* Feature 2 */}
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-nova-cyan/10 flex items-center justify-center">
-                <GoLightBulb color="white" />
-              </div>
+            <div className="flex items-center gap-4">
+              <GoLightBulb color="white" />
               <div>
                 <h3 className="text-gray-100 font-semibold text-lg mb-2">
                   Future-Focused
@@ -81,10 +77,10 @@ export default function AboutMissionVision() {
         {/* RIGHT CARD */}
         <div className="relative">
           <div className="relative md:p-8">
-            <div className="rounded-3xl bg-neutral-950 p-8 border border-[#191919] transition-all duration-300">
+            <div className="rounded-3xl bg-neutral-950 p-8 border border-[#191919]">
               <div className="space-y-6">
                 {/* Badge */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2">
                   <TbTargetArrow color="white" />
                   <span className="text-sm text-muted-foreground">
                     Mission-Driven Development
@@ -103,7 +99,7 @@ export default function AboutMissionVision() {
 
                 {/* Stats */}
                 <div className="grid grid-cols-2 gap-4 mt-6">
-                  <div className="text-center p-4 rounded-xl bg-nova-purple/5">
+                  <div className="text-center p-4 rounded-xl">
                     <div className="text-2xl font-bold text-gray-100 mb-1">
                       5+
                     </div>
@@ -112,7 +108,7 @@ export default function AboutMissionVision() {
                     </div>
                   </div>
 
-                  <div className="text-center p-4 rounded-xl bg-nova-cyan/5">
+                  <div className="text-center p-4 rounded-xl">
                     <div className="text-2xl font-bold text-gray-100 mb-1">
                       100%
                     </div>

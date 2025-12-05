@@ -112,7 +112,7 @@ export default function Services() {
               </div>
 
               <div>
-                <h3 className="font-semibold tracking-tight text-xl mb-2 text-gray-50 transition-colors">
+                <h3 className="font-semibold tracking-tight text-xl mb-2 text-gray-50">
                   {title}
                 </h3>
                 <p className="text-muted-foreground text-base leading-relaxed">
@@ -126,7 +126,7 @@ export default function Services() {
                 {tags.map((tag: string, i: number) => (
                   <span
                     key={i}
-                    className="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold border-transparent bg-[#262626] text-gray-100 text-xs transition-colors"
+                    className="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold border-transparent bg-[#262626] text-gray-100 text-xs"
                   >
                     {tag}
                   </span>

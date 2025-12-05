@@ -7,25 +7,24 @@ import { IoChatbubbleOutline } from "react-icons/io5";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import { IoAnalyticsOutline, IoCodeSlash } from "react-icons/io5";
 import { TiMediaPlayOutline } from "react-icons/ti";
+import SectionHeader from "@/components/SectionHeader";
 
 export default function Hero() {
   return (
     <SectionWrapper className="bg-neutral-900">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center bg-primary">
         {/* LEFT CONTENT  */}
-        <div className="space-y-8 animate-slide-in-left">
+        <div className="space-y-8">
           <PillBadge
             title="Full-Stack Digital Solutions"
             icon={<AiOutlineThunderbolt />}
           />
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-50">
-            Build. Market. <br />
-            Scale.
-          </h1>
-          <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
-            From cutting-edge web applications to viral social media campaigns.
-            We&apos;re your complete digital growth partner.
-          </p>
+          <SectionHeader
+            className="text-start"
+            title={`Build. Market. \nScale.`}
+            subtitle="From cutting-edge web applications to viral social media campaigns.
+            We're your complete digital growth partner."
+          />
           <div
             className="inline-flex items-center px-4 py-2 rounded-full bg-linear-to-r 
                     from-green-500/20 to-blue-500/20 border border-green-400/30 
@@ -82,10 +81,10 @@ export default function Hero() {
         <div className="space-y-6">
           <div className="grid grid-cols-1 gap-4">
             {/* Card 1  */}
-            <div className="rounded-lg p-6 bg-[#0A0A0A] backdrop-blur-sm border border-[#171717] shadow-sm hover:shadow-lg transition-all duration-300">
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-lg bg-linear-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
-                  <IoCodeSlash color="white" size={30} />
+            <div className="group rounded-lg p-6 bg-[#0A0A0A] backdrop-blur-sm border border-[#171717] shadow-sm hover:shadow-lg ">
+              <div className="flex items-center gap-4 ">
+                <div className="w-12 h-12 rounded-lg bg-linear-to-br from-blue-500 to-cyan-500 flex items-center justify-center group-hover:scale-110 ease-in-out duration-300">
+                  <IoCodeSlash color="white" size={28} />
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-50">
@@ -99,9 +98,9 @@ export default function Hero() {
             </div>
 
             {/* Card 2  */}
-            <div className="rounded-lg p-6 bg-[#0A0A0A] backdrop-blur-sm border border-[#171717] shadow-sm hover:shadow-lg transition-all duration-300">
+            <div className="group rounded-lg p-6 bg-[#0A0A0A] backdrop-blur-sm border border-[#171717] shadow-sm hover:shadow-lg">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-lg bg-linear-to-br from-pink-500 to-red-500 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-lg bg-linear-to-br from-pink-500 to-red-500 flex items-center justify-center group-hover:scale-110 ease-in-out duration-300">
                   <TiMediaPlayOutline color="white" size={32} />
                 </div>
                 <div>
@@ -116,9 +115,9 @@ export default function Hero() {
             </div>
 
             {/* Card 3  */}
-            <div className="rounded-lg p-6 bg-[#0A0A0A] backdrop-blur-sm border border-[#171717] shadow-sm hover:shadow-lg transition-all duration-300">
+            <div className="group rounded-lg p-6 bg-[#0A0A0A] backdrop-blur-sm border border-[#171717] shadow-sm hover:shadow-lg">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-lg bg-linear-to-br from-green-500 to-emerald-500 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-lg bg-linear-to-br from-green-500 to-emerald-500 flex items-center justify-center group-hover:scale-110 ease-in-out duration-300">
                   <IoAnalyticsOutline color="white" size={32} />
                 </div>
                 <div>

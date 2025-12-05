@@ -45,7 +45,7 @@ export default function TestimonialSection() {
         subtitle="Hear experiences from clients who trusted our digital expertise"
       />
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {testimonials.map((item, i) => (
           <div
             key={i}

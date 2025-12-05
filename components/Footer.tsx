@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { FaInstagram } from "react-icons/fa";
 import { FaRegEnvelope } from "react-icons/fa";
@@ -72,14 +73,12 @@ export default function Footer() {
               and scale with cutting-edge technology and proven strategies.
             </p>
             <div className="flex space-x-4">
-              {/* Instagram */}
               <Link
                 href="#"
                 className="text-muted-foreground transition-colors"
               >
                 <FaInstagram size={20} />
               </Link>
-              {/* Email */}
               <Link
                 href="#"
                 className="text-muted-foreground transition-colors"
