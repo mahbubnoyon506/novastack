@@ -26,7 +26,6 @@ export default function Hero() {
             From cutting-edge web applications to viral social media campaigns.
             We&apos;re your complete digital growth partner.
           </p>
-          {/* Guaranteed Badge  */}
           <div
             className="inline-flex items-center px-4 py-2 rounded-full bg-linear-to-r 
                     from-green-500/20 to-blue-500/20 border border-green-400/30 

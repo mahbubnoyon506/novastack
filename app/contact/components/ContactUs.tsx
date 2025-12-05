@@ -1,11 +1,10 @@
-import CustomButton from "@/components/CustomButton";
 import SectionHeader from "@/components/SectionHeader";
 import SectionWrapper from "@/components/SectionWrapper";
-import { FaArrowRightLong } from "react-icons/fa6";
 import { FaRegEnvelope } from "react-icons/fa";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { MdOutlineSupportAgent } from "react-icons/md";
+import ContactForm from "./ContactForm";
 
 const contacts = [
   {
@@ -51,61 +50,7 @@ export default function ContactUs() {
                   Send us a message
                 </h3>
 
-                <form className="space-y-6">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="text-sm font-medium text-foreground"
-                    >
-                      Name
-                    </label>
-                    <input
-                      id="name"
-                      placeholder="Your full name"
-                      required
-                      className="w-full h-10 mt-2 rounded-md border px-3 py-2 text-base bg-background/50 border-border/50 placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring focus:border-nova-purple transition"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="text-sm font-medium text-foreground"
-                    >
-                      Email
-                    </label>
-                    <input
-                      id="email"
-                      type="email"
-                      placeholder="your.email@example.com"
-                      required
-                      className="w-full h-10 mt-2 rounded-md border px-3 py-2 text-base bg-background/50 border-border/50 placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring focus:border-nova-purple transition"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="message"
-                      className="text-sm font-medium text-foreground"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      rows={6}
-                      placeholder="Tell us about your project, goals, and timeline..."
-                      required
-                      className="w-full min-h-20 mt-2 rounded-md border px-3 py-2 text-sm bg-background/50 border-border/50 placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring focus:border-nova-purple transition resize-none"
-                    />
-                  </div>
-                  <CustomButton
-                    type="submit"
-                    className="bg-neutral-900 w-full"
-                    icon={<FaArrowRightLong />}
-                  >
-                    Send Message
-                  </CustomButton>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>
@@ -116,7 +61,7 @@ export default function ContactUs() {
               {contacts.map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center gap-4 p-6 rounded-2xl bg-transparent shadow-sm border border-[#7E7E7E]"
+                  className="flex items-center gap-4 p-6 rounded-2xl bg-transparent shadow-sm border border-neutral-950"
                 >
                   <div>{item.icon}</div>
                   <div>

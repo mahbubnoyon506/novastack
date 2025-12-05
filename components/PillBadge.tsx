@@ -1,11 +1,17 @@
 import React from "react";
 
+interface PillBadgeProps extends React.HTMLAttributes<HTMLDivElement> {
+  title?: string;
+  icon?: React.ReactNode;
+  className?: string;
+}
+
 export default function PillBadge({
   title = "",
   icon: Icon,
   className = "",
   ...props
-}) {
+}: PillBadgeProps) {
   return (
     <div
       className={`

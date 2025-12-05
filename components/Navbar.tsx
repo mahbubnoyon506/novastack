@@ -26,7 +26,7 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center space-x-8 text-gray-50">
             {menuItems.map((menu, idx) => (
-              <Link key={idx} href={menu.url} className="nav-link">
+              <Link key={idx} href={menu.url} className="text-md font-semibold">
                 {menu.name}
               </Link>
             ))}

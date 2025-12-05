@@ -18,9 +18,7 @@ export default function AboutMissionVision() {
         subtitle="Innovation-First Development Agency"
       />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        {/* LEFT CONTENT */}
         <div className="flex flex-col justify-center">
-          {/* Badge */}
           <div>
             <PillBadge
               title="About Nova Stack"
@@ -125,15 +123,6 @@ export default function AboutMissionVision() {
                 </div>
               </div>
             </div>
-
-            {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-nova-cyan/20 animate-float"></div>
-            <div
-              className="absolute -bottom-4 -left-4 w-6 h-6 rounded-full bg-nova-purple/20 animate-float"
-              style={{ animationDelay: "1s" }}
-            ></div>
-
-            <div className="absolute inset-0 bg-linear-to-br from-nova-purple/10 via-transparent to-nova-cyan/10 rounded-3xl blur-xl -z-10"></div>
           </div>
         </div>
       </div>
