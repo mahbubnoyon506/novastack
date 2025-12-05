@@ -49,7 +49,7 @@ export default function TestimonialSection() {
         {testimonials.map((item, i) => (
           <div
             key={i}
-            className="rounded-lg border shadow-sm group hover:shadow-xl transition-all duration-500 border-[#7E7E7E] bg-transparent backdrop-blur-sm p-8 animate-fade-in-up"
+            className="rounded-lg border shadow-sm group hover:shadow-xl border-[#7E7E7E] bg-transparent p-8"
           >
             <div className="flex items-center mb-6">
               <Image
@@ -60,7 +60,7 @@ export default function TestimonialSection() {
                 className="w-14 h-14 rounded-full shadow-md border"
               />
               <div className="ml-4">
-                <h3 className="font-semibold text-lg group text-gray-100 transition-colors">
+                <h3 className="font-semibold text-lg group text-gray-100">
                   {item.name}
                 </h3>
                 <p className="text-muted-foreground text-sm">{item.role}</p>

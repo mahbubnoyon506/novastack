@@ -13,7 +13,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-[#0C0C0A] bg-primary backdrop-blur animate-fade-in-up">
+    <header className="sticky top-0 z-50 w-full border-b border-[#0C0C0A] bg-primary backdrop-blur">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 divide-y divide-[#262626]">
         <div className="flex h-20 items-center justify-between ">
           {/* Logo */}

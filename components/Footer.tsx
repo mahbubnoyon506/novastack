@@ -73,16 +73,10 @@ export default function Footer() {
               and scale with cutting-edge technology and proven strategies.
             </p>
             <div className="flex space-x-4">
-              <Link
-                href="#"
-                className="text-muted-foreground transition-colors"
-              >
+              <Link href="#" className="text-muted-foreground">
                 <FaInstagram size={20} />
               </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground transition-colors"
-              >
+              <Link href="#" className="text-muted-foreground">
                 <FaRegEnvelope size={20} />
               </Link>
             </div>
@@ -98,7 +92,7 @@ export default function Footer() {
                 <li key={idx}>
                   <Link
                     href={item.route}
-                    className="text-muted-foreground hover:underline transition-colors"
+                    className="text-muted-foreground hover:underline"
                   >
                     {item.name}
                   </Link>
@@ -117,7 +111,7 @@ export default function Footer() {
                 <li key={idx}>
                   <Link
                     href={item.route}
-                    className="text-muted-foreground hover:underline transition-colors"
+                    className="text-muted-foreground hover:underline"
                   >
                     {item.name}
                   </Link>
